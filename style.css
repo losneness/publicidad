@@ -1,68 +1,86 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
-    color: #333;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
 }
 
-header {
-    text-align: center;
-    background: linear-gradient(to right, #ff4b2b, #ff416c);
-    color: white;
-    padding: 30px 0;
+header{
+    background:linear-gradient(90deg,#ff0000,#ff7300);
+    color:white;
+    text-align:center;
+    padding:30px;
 }
 
-h1 {
-    margin: 0;
+.banner{
+    background:black;
+    color:yellow;
+    text-align:center;
+    padding:15px;
+    animation:parpadeo 1s infinite;
 }
 
-.catalogo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+@keyframes parpadeo{
+    50%{
+        opacity:0.6;
+    }
 }
 
-.car-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 300px;
-    text-align: center;
-    transition: transform 0.3s;
-    cursor: pointer;
+.catalogo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin:30px;
 }
 
-.car-card:hover {
-    transform: translateY(-10px);
+.car-card{
+    width:320px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
 }
 
-.car-card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
+.car-card:hover{
+    transform:scale(1.05);
 }
 
-button {
-    background-color: #ff416c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 15px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
 }
 
-button:hover {
-    background-color: #ff4b2b;
+.car-card h2{
+    text-align:center;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
+.car-card p{
+    text-align:center;
+    color:#ff0000;
+    font-weight:bold;
+}
+
+button{
+    display:block;
+    margin:15px auto;
+    padding:12px 25px;
+    border:none;
+    background:#ff4500;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#cc3300;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
