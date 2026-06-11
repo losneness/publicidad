@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Carros</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carros Premium</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>🚗 Bienvenido a Carros Premium 🚗</h1>
-        <p>Los mejores autos para ti, con ofertas que no puedes dejar pasar.</p>
-    </header>
 
-    <main>
-        <section class="catalogo">
-            <div class="car-card" onclick="mostrarOferta('Ferrari')">
-                <img src="https://via.placeholder.com/300x150?text=Ferrari" alt="Ferrari">
-                <h2>Ferrari F8</h2>
-                <p>Precio: $300,000</p>
-                <button>Ver Oferta</button>
-            </div>
+<header>
+    <h1>🔥 CARROS PREMIUM 2026 🔥</h1>
+    <p>Encuentra el auto de tus sueños al mejor precio</p>
+</header>
 
-            <div class="car-card" onclick="mostrarOferta('Lamborghini')">
-                <img src="https://via.placeholder.com/300x150?text=Lamborghini" alt="Lamborghini">
-                <h2>Lamborghini Huracán</h2>
-                <p>Precio: $350,000</p>
-                <button>Ver Oferta</button>
-            </div>
+<section class="banner">
+    <h2>🚗 OFERTAS EXCLUSIVAS 🚗</h2>
+    <p>Financiación hasta 72 meses</p>
+</section>
 
-            <div class="car-card" onclick="mostrarOferta('Porsche')">
-                <img src="https://via.placeholder.com/300x150?text=Porsche" alt="Porsche">
-                <h2>Porsche 911</h2>
-                <p>Precio: $200,000</p>
-                <button>Ver Oferta</button>
-            </div>
-        </section>
-    </main>
+<div class="catalogo">
 
-    <footer>
-        <p>&copy; 2026 Carros Premium. ¡Síguenos para más ofertas increíbles!</p>
-    </footer>
+    <div class="car-card">
+        <img src="imgs/ferrari.jpg" alt="Ferrari">
+        <h2>Ferrari F8</h2>
+        <p>$300.000 USD</p>
+        <button onclick="mostrarOferta('Ferrari F8')">Ver Oferta</button>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="car-card">
+        <img src="imgs/lamborghini.jpg" alt="Lamborghini">
+        <h2>Lamborghini Huracán</h2>
+        <p>$350.000 USD</p>
+        <button onclick="mostrarOferta('Lamborghini Huracán')">Ver Oferta</button>
+    </div>
+
+    <div class="car-card">
+        <img src="imgs/porsche.jpg" alt="Porsche">
+        <h2>Porsche 911</h2>
+        <p>$200.000 USD</p>
+        <button onclick="mostrarOferta('Porsche 911')">Ver Oferta</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>📞 Contacto: +57 300 123 4567</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
